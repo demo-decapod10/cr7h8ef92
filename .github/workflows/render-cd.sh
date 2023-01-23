@@ -13,7 +13,6 @@ function usage {
         exit 1
 }
 
-
 # We use "$@" instead of $* to preserve argument-boundary information
 ARGS=$(getopt -o 'b:s:r:h' --long 'base-url:,site:,registry:,help' -- "$@") || usage
 eval "set -- $ARGS"
